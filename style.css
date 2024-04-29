@@ -15,27 +15,40 @@ input {
 }
 
 .search-container {
- /* TODO */
+  width: fit-content;
+  height: 100vh;
+  margin-inline: auto;
 }
 .search-container input,
 .search-container .suggestions {
   /* TODO */
 }
 .search-container input {
- /* TODO */
+  height: 2em;
+  width: 18em;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%)
 }
 .search-container .suggestions {
-   /* TODO */
+  width: match-parent;
+  position: relative;
+  top: 50%;
+  transform: translateY(-1.15em)
 }
 
 ul {
-  /* TODO */
+  list-style-type: none;
+  width: match-parent;
+  margin-top: 0;
+  padding-left: 0.25em;
 }
 ul.has-suggestions {
   /* TODO */
 }
 ul li {
-  /* TODO */
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 ul li:hover {
   /* TODO */
