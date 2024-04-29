@@ -1,17 +1,13 @@
 * {
-  /* box-sizing: border-box; */
-}
-
-:focus {
- /* TODO */
+  box-sizing: border-box;
 }
 
 body {
-  /* TODO */
+  background: linear-gradient(0.25turn, #f9d323, #e75d01)
 }
 
-input {
- /* TODO */
+.search-container input:focus {
+  outline-color: #e75d01; 
 }
 
 .search-container {
@@ -19,22 +15,24 @@ input {
   height: 100vh;
   margin-inline: auto;
 }
-.search-container input,
-.search-container .suggestions {
-  /* TODO */
-}
+
 .search-container input {
-  height: 2em;
-  width: 18em;
+  height: 3em;
+  width: 25em;
   position: relative;
   top: 50%;
-  transform: translateY(-50%)
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.25);
+  padding-left: 0.25em;
+  border: none;
+  border-bottom: 2px solid #e75d01;
 }
+
 .search-container .suggestions {
   width: match-parent;
   position: relative;
   top: 50%;
-  transform: translateY(-1.15em)
+  transform: translateY(-1.5em)
 }
 
 ul {
@@ -43,18 +41,14 @@ ul {
   margin-top: 0;
   padding-left: 0;
 }
-ul.has-suggestions {
-  /* TODO */
-}
+
 ul li {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   padding-left: 0.25em;
-}
-ul li:hover {
-  background-color: #e65c00;
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
-input {
-   /* TODO */
+ul li:hover {
+  background-color: #e65c00;
 }
