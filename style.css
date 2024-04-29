@@ -41,7 +41,8 @@ ul {
   list-style-type: none;
   width: match-parent;
   margin-top: 0;
-  padding-left: 0.25em;
+  padding-left: 0;
+  /* padding-left: 0.25em; */
 }
 ul.has-suggestions {
   /* TODO */
@@ -49,9 +50,10 @@ ul.has-suggestions {
 ul li {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+  padding-left: 0.25em;
 }
 ul li:hover {
-  /* TODO */
+  background-color: #e65c00;
 }
 
 input {
